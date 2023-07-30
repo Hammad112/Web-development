@@ -1,0 +1,331 @@
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+
+}
+
+.topnav img {
+    float: left;
+    width: 59px;
+    height: 59px;
+    padding: 14px 16px;
+    cursor: pointer;
+
+}
+
+/* Style the links inside the navigation bar */
+.topnav p {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    cursor: pointer;
+
+}
+
+.topnav img:hover {
+    font-style: italic;
+    background-color: cornflowerblue;
+    text-decoration-line: underline;
+}
+
+.topnav p:hover {
+    font-style: italic;
+    background-color: cornflowerblue;
+    text-decoration-line: underline;
+
+
+}
+
+.topnav button {
+    text-align: center;
+    float: right;
+    width: 160px;
+    height: 55px;
+    margin-right: 20px;
+    margin-top: 14px;
+    cursor: pointer;
+}
+
+.topnav #submit,
+#signin {
+    background-color: rgb(11, 49, 37);
+    color: aliceblue;
+
+}
+
+.topnav #signin:hover {
+    font-style: italic;
+    background-color: cornflowerblue;
+    text-decoration-line: underline;
+
+}
+
+.topnav #submit:hover {
+    font-style: italic;
+    background-color: cornflowerblue;
+    text-decoration-line: underline;
+
+}
+
+.help {
+    transform: translateY(-44px);
+    height: 250px;
+    width: 100%;
+    background-color: #8f3939;
+    text-align: center;
+}
+
+.help h1 {
+    padding-top: 50px;
+    color: black;
+    font-size: 50px;
+
+}
+
+.help input {
+    font-size: larger;
+    height: 40px;
+    width: 500px;
+    cursor: pointer;
+}
+
+.help input:hover {
+    font-style: italic;
+    background-color: cornflowerblue;
+    text-decoration-line: underline;
+}
+
+.branch {
+    text-align: left;
+    display: flex;
+    margin-top: 100px;
+    margin-left: 250px;
+    word-spacing: 3px;
+
+}
+
+.branch img {
+    float: left;
+    width: 99px;
+    height: 120px;
+    margin-top: 16px;
+    margin-right: 20px;
+
+}
+
+.branch p #head {
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.branch p #headtwo {
+    font-size: large;
+
+
+}
+
+.branch #headtwo a {
+    float: left;
+    margin-top: 2px;
+    opacity: 0.5;
+}
+
+.branch #headtwo a:hover {
+    opacity: 1;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    text-decoration-line: underline;
+}
+
+
+.manage {
+    display: flex;
+    float: right;
+    text-align: left;
+
+    transform: translateY(-150px);
+    margin-right: 350px;
+}
+
+
+.manage img {
+    width: 120px;
+    height: 140px;
+    margin-top: 16px;
+    margin-right: 20px;
+
+}
+
+.manage .manageone #head {
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.manage .manageone #headone {
+    font-weight: lighter;
+    transform: translateY(-58px);
+}
+
+.manage .manageone a {
+    opacity: 0.5;
+}
+
+.manage .manageone a:hover {
+    opacity: 1;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    text-decoration-line: underline;
+}
+
+
+.managet {
+    text-align: left;
+    display: flex;
+    margin-top: 100px;
+    margin-left: 250px;
+    word-spacing: 3px;
+
+}
+
+.managet img {
+    float: left;
+    width: 99px;
+    height: 125px;
+    margin-top: 25px;
+    margin-right: 20px;
+
+}
+
+.managet span {
+    display: inline;
+    overflow: hidden;
+
+}
+
+.managet span #para1 {
+
+    font-size: x-large;
+    font-weight: bolder;
+    padding-top: 5px;
+}
+
+.managet span #para2 {
+    font-size: large;
+    transform: translateX(+15);
+    transform: translateY(-50px);
+}
+
+.managet span a {
+    color: blue;
+    opacity: 0.5;
+}
+
+.managet span a:hover {
+    opacity: 1;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    text-decoration-line: underline;
+}
+
+.dollar {
+    display: flex;
+    float: right;
+    text-align: left;
+    transform: translateY(-220px);
+    margin-right: 390px;
+
+}
+
+.dollar img {
+    width: 120px;
+    height: 140px;
+    margin-top: 16px;
+    margin-right: 20px;
+
+}
+
+.dollar span {
+    display: inline;
+    overflow: hidden;
+
+}
+
+.dollar span #para1 {
+    font-weight: bold;
+    font-size: x-large;
+
+}
+
+.dollar span #para2 {
+    font-size: large;
+    font-weight: lighter;
+    transform: translateY(-18px);
+
+}
+
+.dollar span a {
+    opacity: 0.5;
+    color: blue;
+
+}
+
+.dollar span a:hover {
+    opacity: 1;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    text-decoration-line: underline;
+}
+
+
+.footer {
+    display: flex;
+    background-color: #333;
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+
+
+}
+
+.footer ul {
+    font-size: large;
+    transform: translateX(+550px);
+    list-style-type: none;
+    margin-right: 40px;
+    text-align: left;
+    word-spacing: 12x;
+
+}
+
+.footer span {
+    position: relative;
+    transform: translateY(250px);
+    padding-left: 130px;
+
+
+}
+
+.footer span a {
+    color: blanchedalmond;
+    opacity: 0.5;
+}
+
+.footer span a:hover {
+    opacity: 1;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    text-decoration-line: underline;
+}
