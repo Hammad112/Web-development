@@ -1,0 +1,252 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Header*/
+nav {
+    margin: 4em;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 4.1em;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    position: relative;
+}
+
+
+
+nav ul li .active:before {
+    position: absolute;
+    content: "";
+    width: 35%;
+    height: 1px;
+    border-bottom: 2px solid black;
+    bottom: -2px;
+}
+
+nav ul li a:before {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 1px;
+    border-bottom: 2px solid rgb(8, 7, 7);
+    bottom: -2px;
+    transition: width .3s;
+
+}
+
+nav ul li a:hover:before {
+    width: 35%;
+}
+
+
+/*Main Section*/
+main {
+    display: flex;
+    gap: 10.8em;
+    margin-top: 11em;
+}
+
+
+.left-side {
+    width: 45%;
+}
+
+main .left-side h1 {
+    font-size: 5.2rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    margin: 0;
+}
+
+main .left-side p {
+    font-size: 1.8rem;
+}
+
+.buttons {
+    display: flex;
+    margin: 2em;
+    gap: 2em;
+}
+
+
+
+main .left-side .buttons .primary button {
+    background-color: pink;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    border: transparent;
+    border-radius: 0.9em;
+    padding: 1em 2em;
+}
+
+main .left-side .buttons .primary button:hover {
+    text-decoration: underline;
+    background-color: cadetblue;
+    font-size: 2.0rem;
+}
+
+main .left-side .buttons .secoundary {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: black;
+    background-color: cadetblue;
+    padding: 1em 2em;
+    border-radius: 0.9em;
+    width: auto;
+    align-items: center;
+}
+
+main .left-side .buttons .secoundary:hover {
+    text-decoration: underline;
+
+}
+
+
+
+main .left-side .news div {
+    display: flex;
+    gap: 5em;
+    padding: 5em;
+    border: 1px solid black;
+    border-radius: .8em;
+    position: relative;
+
+}
+
+main .left-side .news div:before {
+    position: absolute;
+    content: "";
+    background: url(/confetti.svg);
+    width: 100px;
+    height: 100px;
+    top: -20px;
+    left: -20px;
+    z-index: 2;
+
+}
+
+.news div .employees {
+    font-size: 3.3rem;
+    margin: 0;
+    font-weight: 200;
+    line-height: 100%;
+
+}
+
+.news div .details {
+    font-size: 1.4rem;
+    margin: 0;
+    line-height: 100%;
+}
+
+/*Right Coloumn*/
+
+.right {
+    display: grid;
+    gap: 2.3em;
+    grid-template-columns: repeat(2, auto);
+    grid-template-areas: "left right"
+        "left bottom";
+}
+
+.card {
+    border-radius: .83em;
+    padding: 1.1em;
+    display: flex;
+    align-items: end;
+    background-size: 150%;
+
+}
+
+.card .carddetails {
+    background: white;
+    border-radius: 2em;
+    padding: 2em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.carddetails a {
+    color: black;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+
+.carddetails p {
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+p .price {
+    font-size: 1.8rem;
+}
+
+.cardone {
+    grid-area: left;
+    border-radius: .83em;
+    background-image: url("/clothing1.jpg");
+    position: relative;
+}
+
+.cardone:before {
+    content: "";
+    position: absolute;
+    background: url(tag.svg) no-repeat;
+    width: 100%;
+    height: 100%;
+    top: 20px;
+    left: -30px;
+    pointer-events: none;
+}
+
+.cardtwo {
+    grid-area: right;
+    border-radius: .83em;
+    background-image: url("/clothing2.jpg");
+}
+
+.cardthree {
+    grid-area: bottom;
+    border-radius: .83em;
+    background-image: url("/clothing3.jpg");
+}
+
+.right {
+    flex-grow: 1;
+
+}
